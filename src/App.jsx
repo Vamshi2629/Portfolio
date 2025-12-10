@@ -6,9 +6,12 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
+import SolarSystemBackground from './components/SolarSystemBackground';
+
 function App() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen relative">
+      <SolarSystemBackground />
       <Navbar />
       <main>
         <Hero />

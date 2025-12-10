@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import photo from '../assets/photo.jpg';
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -33,8 +34,8 @@ const Navbar = () => {
     return (
         <nav
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-                    ? 'glass-effect shadow-lg'
-                    : 'bg-transparent'
+                ? 'glass-effect shadow-lg'
+                : 'bg-transparent'
                 }`}
         >
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -42,9 +43,18 @@ const Navbar = () => {
                     {/* Logo */}
                     <button
                         onClick={() => scrollToSection('home')}
-                        className="text-2xl font-bold gradient-text font-display cursor-pointer hover:scale-105 transition-transform"
+                        className="flex items-center gap-3 group cursor-pointer"
                     >
-                        Portfolio
+                        <div className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-purple-500 group-hover:border-pink-500 transition-colors duration-300">
+                            <img
+                                src={photo}
+                                alt="Profile"
+                                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                            />
+                        </div>
+                        <span className="text-xl font-bold gradient-text font-display group-hover:scale-105 transition-transform">
+                            Portfolio
+                        </span>
                     </button>
 
                     {/* Desktop Navigation */}
@@ -87,8 +97,8 @@ const Navbar = () => {
             {/* Mobile Menu */}
             <div
                 className={`md:hidden transition-all duration-300 overflow-hidden ${isMobileMenuOpen
-                        ? 'max-h-96 opacity-100'
-                        : 'max-h-0 opacity-0'
+                    ? 'max-h-96 opacity-100'
+                    : 'max-h-0 opacity-0'
                     }`}
             >
                 <div className="glass-effect border-t border-white/10">

@@ -23,11 +23,12 @@ const Hero = () => {
     return (
         <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
             {/* Animated Background Orbs */}
-            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            {/* Animated Background Orbs */}
+            {/* <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="floating-orb w-96 h-96 bg-purple-500 top-20 -left-20 animate-float"></div>
                 <div className="floating-orb w-80 h-80 bg-pink-500 bottom-20 -right-20 animation-delay-400" style={{ animationName: 'float' }}></div>
                 <div className="floating-orb w-72 h-72 bg-cyan-500 top-1/2 left-1/2 animation-delay-800" style={{ animationName: 'float' }}></div>
-            </div>
+            </div> */}
 
             <div className="section-container relative z-10">
                 <div className="max-w-5xl mx-auto text-center">
