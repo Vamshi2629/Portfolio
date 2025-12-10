@@ -26,7 +26,7 @@ const Contact = () => {
     };
 
     const contactInfo = [
-        { icon: Mail, label: 'Email', value: 'your.email@example.com', link: 'mailto:your.email@example.com' },
+        { icon: Mail, label: 'Email', value: 'vamshiboda948@gmail.com', link: 'mailto:vamshiboda948@gmail.com' },
         { icon: MapPin, label: 'Location', value: 'Your City, Country', link: null },
     ];
 
