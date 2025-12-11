@@ -27,7 +27,7 @@ const Contact = () => {
 
     const contactInfo = [
         { icon: Mail, label: 'Email', value: 'vamshiboda948@gmail.com', link: 'mailto:vamshiboda948@gmail.com' },
-        { icon: MapPin, label: 'Location', value: 'Your City, Country', link: null },
+        { icon: MapPin, label: 'Location', value: 'Hyderabad, India', link: null },
     ];
 
     const socialLinks = [

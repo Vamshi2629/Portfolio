@@ -63,7 +63,7 @@ const Footer = () => {
                 <div className="pt-8 border-t border-white/10">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                         <p className="text-gray-400 text-sm flex items-center gap-2">
-                            © {currentYear} Made with <Heart className="w-4 h-4 text-red-500 fill-red-500" /> by Your Name
+                            © {currentYear} Made with <Heart className="w-4 h-4 text-red-500 fill-red-500" /> by Boda Vamshi
                         </p>
                         <p className="text-gray-500 text-sm">
                             Designed & Developed with React + Vite + Tailwind CSS
